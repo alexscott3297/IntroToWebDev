@@ -4,11 +4,10 @@ Date Created: 12/01/21
 Most recent revision:
 -->
 <html lang="en"> 
-<link href="styles/main.css" rel="stylesheet" type="text/css" />
-<header> 
+<head>
     <title>Alex Scotts's Portfolio</title>
-      <h1>Portfolio for Alex Scott</h1>
-</header> 
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    
     <style>
         caption {
             font-weight: bold;
@@ -36,57 +35,83 @@ Most recent revision:
             color: #f2eded;
         } 
 
-        tbody tr:nth-child(even) {
+        tbody tr:nth-child(odd) {
             background-color: #e4c3ad; 
-        }   
-    </style>
+        }  
+    
+        article img {
+            float:left;
+        }
 
-<body>
-    <nav> 
-        <p><a href="">Home</a></p>
-        <p><a href="projects.html">Projects</a></p>
-        <p><a href="contact.html">Contact</a></p>
-        <p><a href="testimonials.html">Testimonials</a></p>
-    </nav>
+        .right-content {
+            float:left;
+        }
+
+        article {
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+  
+    <body>
+        <main>
+            <header> 
+                <h1>Portfolio for Alex Scott</h1>
+            </header> 
+                <nav> 
+                    <p><a href="projects.html">Projects</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                    <p><a href="testimonials.html">Testimonials</a></p>
+                    <div class="clear-float"></div>
+                </nav>
         
         <section>
-            <article>
+            <article id= "about">
                 <h2><em>About Me</em></h2>
-                <img src="images/lab.jpg" alt="photo of a lab" />
+                <img src="images/lab.jpg" alt="photo of a lab" width="250"/>
                 <p>Sed nisi est, aliquam non gravida et, euismod id ex. Praesent molestie metus justo, non tristique nisl blandit id. Proin porta nisl eros, vitae laoreet eros vestibulum in. Integer faucibus malesuada purus quis consectetur.</p> 
+            <div class="clear-float"></div>
             </article>
             
-            <article>
-                <h2><em>Past Experiences</em></h2> 
-                <img src="images/pug.jpg" alt="photo of a pug" />
+            <article id="experience">
+                <h2><em>Past Experiences</em></h2>
+                <img src="images/pug.jpg" alt="photo of a pug" width="250"/>
+                <div class="right-content">
                 <table>
-                <caption>Employment History</caption>
-                    <tr>
-                        <th>Years of Employment</th>
-                        <th>Title</th>
-                        <th>Company</th>
-                    </tr>
-                    <tr>
-                        <td>2018-Present</td>
-                        <td>Apprentice</td>
-                        <td>The Software Guild</td>
-                    </tr>
-                    <tr>
-                        <td>2012-2018</td>
-                        <td>Clerk</td>
-                        <td>United Shipping Services</td>
-                    </tr>
-                    <tr>
-                        <td>2007-2012</td>
-                        <td>Student</td>
-                        <td>State University</td>
-                    </tr>
-                </table>    
-            </article>
+                    <caption>Employment History</caption>
+                        <thead>
+                            <tr> 
+                                <th>Years of Employment</th> 
+                                <th>Title</th> 
+                                <th>Company</th> 
+                            </tr> 
+                        </thead>
+                        <tbody>
+                            <tr> 
+                                <td>2018-Present</td> 
+                                <td>Apprentice</td> 
+                                <td>The Software Guild</td> 
+                            </tr> 
+                            <tr> 
+                                <td>2012-2018</td> 
+                                <td>Clerk</td> 
+                                <td>United Shipping Services</td> 
+                            </tr>
+                            <tr>
+                                <td>2007-2012</td>
+                                <td>Student</td>
+                                <td>State University</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="clear-float"></div>
+                </article>
             
-            <article>
+            <article id="hobbies">
                 <h2><em>Hobbies</em></h2>
-                 <img src="images/vizsla.jpg" alt="photo of a vizsla" />
+                 <img src="images/vizsla.jpg" alt="photo of a vizsla" width="250"/>
+                    <div class="right-content">
                    <ul>
                     <li>Authors</li>
                     <ol>
@@ -113,16 +138,16 @@ Most recent revision:
                         <li>Building sandcastles</li>
                         <li>Pokemon hunting</li>
                         <li>Skiing</li>
+                        </ul>
                     </ul>
-                </ul>
-        </article>               
-            
-    <hr />
-    </section>
-        <footer>
-            <p>&copy; 2020 Alex Scott. All rights reserved.</p>
-        </footer>
-    <hr />
-    
+                    </div>
+                </article>
+                <div class="clear-float"></div>
+            </section>
+   
+            <footer>
+                <p>&copy; 2020 Alex Scott. All rights reserved.</p>
+            </footer>
+        </main>
     </body> 
 </html>

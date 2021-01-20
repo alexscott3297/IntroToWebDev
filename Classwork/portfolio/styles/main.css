@@ -7,7 +7,9 @@ Date last modified:
 body {
     background-color: #fef9ff;
     font-family: arial, helvetica, sans-serif;
-    color: #0d1f2d
+    color: #0d1f2d;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 header, footer {
@@ -28,6 +30,9 @@ nav {
     margin-top: 4px;
 }
 
+.clear-float {
+    clear:both;
+}  
 
 /* Form styling */
 
@@ -79,4 +84,31 @@ textarea {
     border-radius: 3px;
     background-color: #fff;
     resize: none;
+}
+
+nav a {
+    background-color: #5b7d87;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    display: block;
+    margin: 20px 20px;
+    width: 100px;
+    float:left;
+}
+
+nav a:hover {
+    background-color: #fef9ff;
+    color: #5b7d87; 
+}
+
+nav a:hover {
+    background-color: #fef9ff;
+    color: #5b7d87; 
+}
+
+nav a:hover {
+    background-color: #fef9ff;
+    color: #5b7d87; 
 }
